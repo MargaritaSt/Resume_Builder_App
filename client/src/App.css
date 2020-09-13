@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap")
+    format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
+.box {
+  -webkit-box-shadow: 6px 30px 30px 9px rgb(225, 225, 225, 0.3);
+  -moz-box-shadow: 6px 30px 30px 9px rgb(225, 225, 225, 0.3);
+  box-shadow: 6px 30px 30px 9px rgb(225, 225, 225, 0.3);
+  margin-top: 15px;
+  border-radius: 7px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.box1 {
+  -webkit-box-shadow: -6px -10px 10px -9px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -6px -10px 10px -9px rgba(17, 10, 10, 0.3);
+  box-shadow: 10px 10px 80px 1px rgba(10, 6, 6, 0.3);
+  margin-top: 15px;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: white;
+}

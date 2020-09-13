@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,500,700|Roboto&display=swap");
+*,
+*,
+::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.nav {
+  position: sticky;
+  display: flex;
+  position: static;
+  top: 0;
+  color: white;
+  text-decoration: none;
+  height: 80px;
+  width: 100%;
+  padding: 1.5em;
+  justify-content: space-between;
+  font-size: x-large;
+}
+.home {
+  display: flex;
+  background-image: url("http://mdbootstrap.com/img/Photos/Others/images/91.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10em;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+}
+
+.home span {
+  font-size: 2rem;
+}
+.home h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.home h2 {
+  font-size: 2rem;
+}
+.home p {
+  font-size: 1.3rem;
+}
+
+button {
+  width: 200px;
+  height: 55px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+body {
+  background-color: rgba(244, 255, 246, 0.83);
+}
+
+header {
+  height: 100vh;
+  background-image: url("../img/bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+header .login,
+header .signup {
+  height: 100%;
+}
+header .login form,
+header .signup form {
+  width: 80%;
+  background-color: #fff;
+  height: 90%;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+header .login form aside,
+header .signup form aside {
+  width: 40%;
+  background-image: linear-gradient(to right, #bc4e9cd1, #f80759b3);
+  position: relative;
+}
+header .login form aside:after,
+header .signup form aside:after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(228, 171, 220, 0.42);
+  clip-path: circle(30% at 30% 0%);
+}
+header .login form aside:before,
+header .signup form aside:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(228, 171, 220, 0.42);
+  clip-path: circle(40% at 0% 0%);
+}
+header .login form aside h1,
+header .signup form aside h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 2;
+}
+header .login form aside h2,
+header .signup form aside h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: #fef;
+  margin-top: -1rem;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+header .login form aside button,
+header .signup form aside button {
+  border-radius: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  margin-top: 1rem;
+}
+header .login form .content,
+header .signup form .content {
+  width: 60%;
+}
+header .login form .content .text,
+header .signup form .content .text {
+  padding: 2rem 0;
+  margin-top: -2rem;
+}
+header .login form .content .text h1,
+header .signup form .content .text h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #bb41aa;
+}
+header .login form .content .text .icon,
+header .signup form .content .text .icon {
+  margin-bottom: 1rem;
+}
+header .login form .content .text .icon i,
+header .signup form .content .text .icon i {
+  font-size: 1.7rem;
+  color: rgba(88, 27, 152, 0.67);
+  margin-left: 0.5rem;
+}
+header .login form .content .text span,
+header .signup form .content .text span {
+  font-family: "Raleway", sans-serif;
+  color: rgba(61, 71, 76, 0.92);
+}
+header .login form .content .form-group,
+header .signup form .content .form-group {
+  width: 85%;
+}
+header .login form .content .form-group input,
+header .signup form .content .form-group input {
+  width: 100%;
+  height: 55px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  /* text-transform: capitalize; */
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+header .login form .content .form-group input[type="submit"],
+header .signup form .content .form-group input[type="submit"] {
+  width: 200px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #bc4e9c, #f80759);
+  color: #fff;
+}
+
+.userValidation {
+  color: red;
+  font-size: 12px;
+  height: 10px;
+}
+
+/* Create Resume Button Styling */
+
+.create_resume button {
+  width: 500px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #bc4e9c, #f80759);
+  color: #fff;
+  font-size: 1.5rem;
+}
+/* Guidlines Styling */
+
+ol{
+  padding: 50px 30px 30px 50px;
+  list-style: none;
+  width: 1000px;
+  counter-reset: section;
+  justify-content: center;
+  align-items: center;
+}
+ol li{
+  background: rgb(228, 231, 235);
+  padding: 20px 30px 20px 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+ol li:last-child{
+  margin-bottom:0;
+}
+ol li.loaded::before{
+  counter-increment: section;
+  content: counters(section,".") " ";
+  background: url('../img/index-back.png') no-repeat center center;
+  width: 46px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 8px;
+  position: absolute;
+  left: -7px;
+}
+
+/*Resume Styling*/
+.resume_nav{
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+  justify-content: space-between;
+  width: 25%;
+  background-image: linear-gradient(to right, #bc4e9cd1, #f80759b3);
+}
+
+@media screen and (max-width: 967px) {
+
+  .nav {
+    top: 0;
+    min-height: 10px;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5em;
+    justify-content: space-between;
+  }
+
+  .home {
+      padding-top: 5em;
+  }
+
+  .home h1 {
+      font-size: 2rem;
+  }
+  .home h2 {
+    font-size: 1rem;
+  }
+  .home p {
+    font-size: 0.7rem;
+  }
+
+  header {
+    min-height: 120vh !important;
+  }
+  header .signup,
+  header .login {
+    width: 90%;
+    min-height: 100% !important;
+  }
+  header .signup form,
+  header .login form {
+    width: 105% !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+  }
+  header .signup form aside,
+  header .login form aside {
+    width: 100%;
+    min-height: 40%;
+    padding-top: 2rem;
+  }
+  header .signup form aside h1,
+  header .login form aside h1 {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+  }
+  header .signup form aside h2,
+  header .login form aside h2 {
+    font-size: 1rem;
+    width: 80%;
+  }
+  header .signup form aside button,
+  header .login form aside button {
+    margin: 0;
+  }
+  header .signup form .content,
+  header .login form .content {
+    width: 100%;
+    min-height: 80%;
+    justify-content: flex-start;
+  }
+  header .signup form .content .text,
+  header .login form .content .text {
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  header .signup form .content .text h1,
+  header .login form .content .text h1 {
+    font-size: 1.4rem;
+  }
+  header .signup form .content .form-group,
+  header .login form .content .form-group {
+    width: 95%;
+  }
+  header .login form aside {
+    order: 1 !important;
+  }
+  header .login form .content {
+    order: 2 !important;
+  }
+  header .login form .content .text {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+}
